@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MenuTableViewController: UITableViewController, UINavigationControllerDelegate {
+class MenuTableViewController: UITableViewController {
     
     private let tableCellNibName = String(MenuTableViewCell)
     
@@ -33,23 +33,13 @@ class MenuTableViewController: UITableViewController, UINavigationControllerDele
     }
     
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        switch section {
-        case 0:
-            return "Table"
-        default:
-            return ""
-        }
+        return "Table"
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(tableCellNibName, forIndexPath: indexPath) as! MenuTableViewCell
         
-        switch indexPath.row {
-        case 0:
-            cell.titleLabel.text = "3DTransition"
-        default:
-            cell.titleLabel.text = "None"
-        }
+        cell.titleLabel.text = "3DTransition"
         
         return cell
     }
@@ -59,5 +49,4 @@ class MenuTableViewController: UITableViewController, UINavigationControllerDele
         
         navigationController?.pushViewController(vc, animated: true)
     }
-    
 }

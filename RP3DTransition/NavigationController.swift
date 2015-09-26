@@ -9,6 +9,7 @@
 import UIKit
 
 class NavigationController: UINavigationController, UINavigationControllerDelegate {
+    var interactiveTransition:RP3DInterativeTransition?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,7 @@ class NavigationController: UINavigationController, UINavigationControllerDelega
         
         switch operation {
         case .Push:
+            interactiveTransition = nil
             animator.transitionType = .Push
             return animator
             
@@ -35,5 +37,10 @@ class NavigationController: UINavigationController, UINavigationControllerDelega
         default:
             return nil
         }
+    }
+    
+    func navigationController(navigationController: UINavigationController, interactionControllerForAnimationController animationController: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+        
+        return interactiveTransition
     }
 }

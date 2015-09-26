@@ -8,10 +8,10 @@
 
 import UIKit
 
-class DetailTableViewController: UITableViewController {
+class DetailTableViewController: UITableViewController, UIGestureRecognizerDelegate,  UINavigationControllerDelegate {
     
     private let tableCellNibName = String(DetailTableViewCell)
-    private let tableCount = 30
+    private let tableCount = 10
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +24,13 @@ class DetailTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
     }
     
+    override func viewDidAppear(animated: Bool) {
+        
+        if let navVC = navigationController as? NavigationController {
+            navVC.interactiveTransition = RP3DInterativeTransition()
+            navVC.interactiveTransition!.attachToViewController(self)
+        }
+    }
     // MARK: - Table view data source
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
