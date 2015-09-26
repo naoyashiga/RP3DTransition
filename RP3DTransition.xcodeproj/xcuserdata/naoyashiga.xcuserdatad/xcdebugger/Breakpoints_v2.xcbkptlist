@@ -15,7 +15,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "13"
             endingLineNumber = "13"
-            landmarkName = "applyCellNib()"
+            landmarkName = "applyCellNib(cellNibName:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
