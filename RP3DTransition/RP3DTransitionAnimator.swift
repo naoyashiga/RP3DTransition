@@ -17,7 +17,11 @@ class RP3DTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     let kForwardAnimationDuration: NSTimeInterval = 0.3
     let kForwardCompleteAnimationDuration: NSTimeInterval = 0.3
     
-    var isPush = false
+    
+    let duration: Double = 0.55
+    let relativeDelayLeftView: Double = 0.09
+    let relativeDelayRightView: Double = 0.12
+    
     let rotateAngle: CGFloat = CGFloat(M_PI_4)
     
     var transitionType = TransitionType.Push
@@ -72,12 +76,19 @@ class RP3DTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
             toViewController.view.layer.transform = rightViewTransform
             fromViewController.view.alpha = 1
             
-            UIView.animateWithDuration(kForwardAnimationDuration, delay: 0, options: .CurveEaseOut, animations: {
+            UIView.animateKeyframesWithDuration(kForwardAnimationDuration, delay: 0, options: UIViewKeyframeAnimationOptions.CalculationModeLinear, animations: {
                 
-                fromViewController.view.layer.transform = leftViewTransform
-                fromViewController.view.alpha = 0
+                UIView.addKeyframeWithRelativeStartTime(0, relativeDuration: 1, animations: {
+                    fromViewController.view.layer.transform = leftViewTransform
+                    fromViewController.view.alpha = 0
+                })
                 
-                toViewController.view.layer.transform = CATransform3DIdentity
+                UIView.addKeyframeWithRelativeStartTime(
+                    self.relativeDelayLeftView / self.duration,
+                    relativeDuration: 1 - self.relativeDelayLeftView / self.duration,
+                    animations: {
+                        toViewController.view.layer.transform = CATransform3DIdentity
+                })
                 
                 }, completion: { finished in
                     
@@ -89,12 +100,32 @@ class RP3DTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
             toViewController.view.layer.transform = leftViewTransform
             toViewController.view.alpha = 0
             
-            UIView.animateWithDuration(kForwardAnimationDuration, delay: 0, options: .CurveEaseOut, animations: {
+            UIView.animateKeyframesWithDuration(kForwardAnimationDuration, delay: 0, options: UIViewKeyframeAnimationOptions.CalculationModeLinear, animations: {
                 
-                fromViewController.view.layer.transform = rightViewTransform
+                UIView.addKeyframeWithRelativeStartTime(0, relativeDuration: 1, animations: {
+                    fromViewController.view.layer.transform = rightViewTransform
+                })
                 
-                toViewController.view.layer.transform = CATransform3DIdentity
-                toViewController.view.alpha = 1
+                UIView.addKeyframeWithRelativeStartTime(
+                    self.relativeDelayRightView / self.duration,
+                    relativeDuration: 1 - self.relativeDelayRightView / self.duration,
+                    animations: {
+                        toViewController.view.layer.transform = CATransform3DIdentity
+                })
+                
+                UIView.addKeyframeWithRelativeStartTime(
+                    0,
+                    relativeDuration: 0.85,
+                    animations: {
+                        toViewController.view.alpha = 0.5
+                })
+                
+                UIView.addKeyframeWithRelativeStartTime(
+                    0.85,
+                    relativeDuration: 0.15,
+                    animations: {
+                        toViewController.view.alpha = 1
+                })
                 
                 }, completion: { finished in
                     
