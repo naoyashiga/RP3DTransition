@@ -22,7 +22,7 @@
 		9A17DBBE1BB65BE1000C2BA7 /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A17DBBC1BB65BE1000C2BA7 /* DetailTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
 		9A17DBC21BB66309000C2BA7 /* RP3DTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A17DBC11BB66309000C2BA7 /* RP3DTransitionAnimator.swift */; settings = {ASSET_TAGS = (); }; };
 		9A17DBC41BB6665A000C2BA7 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A17DBC31BB6665A000C2BA7 /* NavigationController.swift */; settings = {ASSET_TAGS = (); }; };
-		9A17DBC61BB6793E000C2BA7 /* RP3DInterativeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A17DBC51BB6793E000C2BA7 /* RP3DInterativeTransition.swift */; settings = {ASSET_TAGS = (); }; };
+		9A17DBC61BB6793E000C2BA7 /* RP3DInteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A17DBC51BB6793E000C2BA7 /* RP3DInteractiveTransition.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +64,7 @@
 		9A17DBBC1BB65BE1000C2BA7 /* DetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
 		9A17DBC11BB66309000C2BA7 /* RP3DTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RP3DTransitionAnimator.swift; sourceTree = "<group>"; };
 		9A17DBC31BB6665A000C2BA7 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
-		9A17DBC51BB6793E000C2BA7 /* RP3DInterativeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RP3DInterativeTransition.swift; sourceTree = "<group>"; };
+		9A17DBC51BB6793E000C2BA7 /* RP3DInteractiveTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RP3DInteractiveTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,7 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				9A17DBC11BB66309000C2BA7 /* RP3DTransitionAnimator.swift */,
-				9A17DBC51BB6793E000C2BA7 /* RP3DInterativeTransition.swift */,
+				9A17DBC51BB6793E000C2BA7 /* RP3DInteractiveTransition.swift */,
 			);
 			name = Transition;
 			sourceTree = "<group>";
@@ -329,7 +329,7 @@
 				9A17DBBA1BB65BB5000C2BA7 /* DetailTableViewController.swift in Sources */,
 				9A17DBBD1BB65BE1000C2BA7 /* DetailTableViewCell.swift in Sources */,
 				9A17DBB81BB65B6E000C2BA7 /* UITableView+RPExtension.swift in Sources */,
-				9A17DBC61BB6793E000C2BA7 /* RP3DInterativeTransition.swift in Sources */,
+				9A17DBC61BB6793E000C2BA7 /* RP3DInteractiveTransition.swift in Sources */,
 				9A17DB811BB65781000C2BA7 /* AppDelegate.swift in Sources */,
 				9A17DBB41BB65A60000C2BA7 /* MenuTableViewCell.swift in Sources */,
 				9A17DBB01BB65990000C2BA7 /* MenuTableViewController.swift in Sources */,
@@ -557,6 +557,7 @@
 				9A17DBA71BB65781000C2BA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A17DBA81BB65781000C2BA7 /* Build configuration list for PBXNativeTarget "RP3DTransitionTests" */ = {
 			isa = XCConfigurationList;
@@ -565,6 +566,7 @@
 				9A17DBAA1BB65781000C2BA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A17DBAB1BB65781000C2BA7 /* Build configuration list for PBXNativeTarget "RP3DTransitionUITests" */ = {
 			isa = XCConfigurationList;
@@ -573,6 +575,7 @@
 				9A17DBAD1BB65781000C2BA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

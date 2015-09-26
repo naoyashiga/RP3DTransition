@@ -9,7 +9,7 @@
 import UIKit
 
 class NavigationController: UINavigationController, UINavigationControllerDelegate {
-    var interactiveTransition:RP3DInterativeTransition?
+    var interactiveTransition: RP3DInteractiveTransition?
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -18,6 +18,10 @@ class DetailTableViewController: UITableViewController, UIGestureRecognizerDeleg
         
         tableView.applyCellNib(cellNibName: tableCellNibName)
         
+        let backButton = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.Plain, target: self, action: "backButtonTapped")
+        
+        navigationItem.leftBarButtonItem = backButton
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -27,7 +31,7 @@ class DetailTableViewController: UITableViewController, UIGestureRecognizerDeleg
     override func viewDidAppear(animated: Bool) {
         
         if let navVC = navigationController as? NavigationController {
-            navVC.interactiveTransition = RP3DInterativeTransition()
+            navVC.interactiveTransition = RP3DInteractiveTransition()
             navVC.interactiveTransition!.attachToViewController(self)
         }
     }

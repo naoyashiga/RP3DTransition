@@ -49,4 +49,11 @@ class MenuTableViewController: UITableViewController {
         
         navigationController?.pushViewController(vc, animated: true)
     }
+    
+    func backButtonTapped() {
+        if let navVC = navigationController as? NavigationController {
+            navVC.interactiveTransition = nil
+            navVC.popViewControllerAnimated(true)
+        }
+    }
 }

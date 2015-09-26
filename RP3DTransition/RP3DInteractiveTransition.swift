@@ -1,5 +1,5 @@
 //
-//  RP3DInterativeTransition.swift
+//  RP3DInteractiveTransition.swift
 //  RP3DTransition
 //
 //  Created by naoyashiga on 2015/09/26.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RP3DInterativeTransition: UIPercentDrivenInteractiveTransition {
+class RP3DInteractiveTransition: UIPercentDrivenInteractiveTransition {
     
     private var parentViewController = UIViewController()
     private let percentageAdjustFactor: CGFloat = 2.5
@@ -23,7 +23,7 @@ class RP3DInterativeTransition: UIPercentDrivenInteractiveTransition {
         parentViewController.view.addGestureRecognizer(edgePanRecognizer)
     }
     
-    private func handleEdgePanRecognizer(recognizer: UIScreenEdgePanGestureRecognizer) {
+    func handleEdgePanRecognizer(recognizer: UIScreenEdgePanGestureRecognizer) {
         
         var progress = recognizer.translationInView(parentViewController.view).x / parentViewController.view.bounds.size.width / percentageAdjustFactor
         progress = min(1.0, max(0.0, progress))
