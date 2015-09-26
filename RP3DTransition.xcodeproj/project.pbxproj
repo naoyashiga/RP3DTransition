@@ -118,10 +118,10 @@
 				9A17DB891BB65781000C2BA7 /* LaunchScreen.storyboard */,
 				9A17DBBF1BB661BA000C2BA7 /* AppDelegate */,
 				9A17DBC01BB662EF000C2BA7 /* Transition */,
-				9A17DBB61BB65B56000C2BA7 /* Extension */,
 				9A17DBB11BB659D4000C2BA7 /* View */,
 				9A17DBAE1BB658A5000C2BA7 /* Controller */,
 				9A17DB8C1BB65781000C2BA7 /* Info.plist */,
+				9A17DBB61BB65B56000C2BA7 /* Extension */,
 			);
 			path = RP3DTransition;
 			sourceTree = "<group>";

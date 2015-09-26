@@ -14,47 +14,34 @@ enum TransitionType {
 
 class RP3DTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     
-    let kForwardAnimationDuration: NSTimeInterval = 0.3
-    let kForwardCompleteAnimationDuration: NSTimeInterval = 0.3
-    
-    
-    let duration: Double = 0.55
-    let relativeDelayLeftView: Double = 0.09
-    let relativeDelayRightView: Double = 0.12
-    
-    let rotateAngle: CGFloat = CGFloat(M_PI_4)
-    
     var transitionType = TransitionType.Push
     
+    private let animationDuration: NSTimeInterval = 0.3
+    private let duration: Double = 0.55
+    private let relativeDelayLeftView: Double = 0.09
+    private let relativeDelayRightView: Double = 0.12
+    
+    private let rotateAngle: CGFloat = CGFloat(M_PI_4)
     private(set) weak var transitionContext: UIViewControllerContextTransitioning?
     
-    var containerView: UIView? {
+    private var containerView: UIView? {
         return transitionContext?.containerView()
     }
     
-    var toViewController: UIViewController? {
+    private var toViewController: UIViewController? {
         return transitionContext?.viewControllerForKey(UITransitionContextToViewControllerKey)
-        //            return transitionContext.viewControllerForKey(isPush ? UITransitionContextToViewControllerKey : UITransitionContextFromViewControllerKey)
     }
     
-    var fromViewController: UIViewController? {
+    private var fromViewController: UIViewController? {
         return transitionContext?.viewControllerForKey(UITransitionContextFromViewControllerKey)
-        //            return transitionContext.viewControllerForKey(isPush ? UITransitionContextFromViewControllerKey : UITransitionContextToViewControllerKey)
-    }
-    
-    private func prepare() {
-        
-        guard let fromViewController = fromViewController, toViewController = toViewController else {
-            return
-        }
-        
-        toViewController.view.layer.zPosition = fromViewController.view.layer.zPosition + 1
     }
     
     private func start() {
         guard let fromViewController = fromViewController, toViewController = toViewController, containerView = containerView else {
             return
         }
+        
+        toViewController.view.layer.zPosition = fromViewController.view.layer.zPosition + 1
         
         let screenWidth = UIScreen.mainScreen().bounds.size.width
         
@@ -76,7 +63,7 @@ class RP3DTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
             toViewController.view.layer.transform = rightViewTransform
             fromViewController.view.alpha = 1
             
-            UIView.animateKeyframesWithDuration(kForwardAnimationDuration, delay: 0, options: UIViewKeyframeAnimationOptions.CalculationModeLinear, animations: {
+            UIView.animateKeyframesWithDuration(animationDuration, delay: 0, options: UIViewKeyframeAnimationOptions.CalculationModeLinear, animations: {
                 
                 UIView.addKeyframeWithRelativeStartTime(0, relativeDuration: 1, animations: {
                     fromViewController.view.layer.transform = leftViewTransform
@@ -100,7 +87,7 @@ class RP3DTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
             toViewController.view.layer.transform = leftViewTransform
             toViewController.view.alpha = 0
             
-            UIView.animateKeyframesWithDuration(kForwardAnimationDuration, delay: 0, options: UIViewKeyframeAnimationOptions.CalculationModeLinear, animations: {
+            UIView.animateKeyframesWithDuration(animationDuration, delay: 0, options: UIViewKeyframeAnimationOptions.CalculationModeLinear, animations: {
                 
                 UIView.addKeyframeWithRelativeStartTime(0, relativeDuration: 1, animations: {
                     fromViewController.view.layer.transform = rightViewTransform
@@ -136,13 +123,11 @@ class RP3DTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     }
     
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
-        return kForwardAnimationDuration
+        return animationDuration
     }
     
     func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
         self.transitionContext = transitionContext
-        
-        prepare()
         
         start()
         
