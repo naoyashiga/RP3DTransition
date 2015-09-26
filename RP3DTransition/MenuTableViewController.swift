@@ -8,15 +8,14 @@
 
 import UIKit
 
-struct menuReuseId {
-    static let cell = "MenuTableViewCell"
-}
-
 class MenuTableViewController: UITableViewController {
+    
+    private let tableCellNibName = String(MenuTableViewCell)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.applyCellNib(cellNibName: menuReuseId.cell)
+        tableView.applyCellNib(cellNibName: tableCellNibName)
     }
     
     override func didReceiveMemoryWarning() {
@@ -46,7 +45,7 @@ class MenuTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(menuReuseId.cell, forIndexPath: indexPath) as! MenuTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(tableCellNibName, forIndexPath: indexPath) as! MenuTableViewCell
         
         if indexPath.section == 0 {
             switch indexPath.row {
@@ -74,7 +73,7 @@ class MenuTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let cell = tableView.dequeueReusableCellWithIdentifier(menuReuseId.cell, forIndexPath: indexPath) as! MenuTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(tableCellNibName, forIndexPath: indexPath) as! MenuTableViewCell
         
         if indexPath.section == 0 {
             

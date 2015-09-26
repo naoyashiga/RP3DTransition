@@ -8,18 +8,15 @@
 
 import UIKit
 
-struct DetailTableReuseId {
-    static let cell = "DetailTableViewCell"
-}
-
 class DetailTableViewController: UITableViewController {
     
-    var tableCount = 30
+    private let tableCellNibName = String(DetailTableViewCell)
+    private let tableCount = 30
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.applyCellNib(cellNibName: DetailTableReuseId.cell)
+        tableView.applyCellNib(cellNibName: tableCellNibName)
         
     }
     
@@ -38,7 +35,7 @@ class DetailTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(DetailTableReuseId.cell, forIndexPath: indexPath) as! DetailTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(tableCellNibName, forIndexPath: indexPath) as! DetailTableViewCell
         
         cell.titleLabel.text = "title \(indexPath.row)"
         
