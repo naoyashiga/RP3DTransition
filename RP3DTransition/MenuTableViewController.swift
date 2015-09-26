@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MenuTableViewController: UITableViewController {
+class MenuTableViewController: UITableViewController, UINavigationControllerDelegate {
     
     private let tableCellNibName = String(MenuTableViewCell)
     

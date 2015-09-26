@@ -20,6 +20,8 @@
 		9A17DBBA1BB65BB5000C2BA7 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A17DBB91BB65BB5000C2BA7 /* DetailTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		9A17DBBD1BB65BE1000C2BA7 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A17DBBB1BB65BE1000C2BA7 /* DetailTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		9A17DBBE1BB65BE1000C2BA7 /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A17DBBC1BB65BE1000C2BA7 /* DetailTableViewCell.xib */; settings = {ASSET_TAGS = (); }; };
+		9A17DBC21BB66309000C2BA7 /* RP3DTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A17DBC11BB66309000C2BA7 /* RP3DTransitionAnimator.swift */; settings = {ASSET_TAGS = (); }; };
+		9A17DBC41BB6665A000C2BA7 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A17DBC31BB6665A000C2BA7 /* NavigationController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		9A17DBB91BB65BB5000C2BA7 /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		9A17DBBB1BB65BE1000C2BA7 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		9A17DBBC1BB65BE1000C2BA7 /* DetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
+		9A17DBC11BB66309000C2BA7 /* RP3DTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RP3DTransitionAnimator.swift; sourceTree = "<group>"; };
+		9A17DBC31BB6665A000C2BA7 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 		9A17DB7F1BB65780000C2BA7 /* RP3DTransition */ = {
 			isa = PBXGroup;
 			children = (
+				9A17DBC01BB662EF000C2BA7 /* Transition */,
 				9A17DB841BB65781000C2BA7 /* Main.storyboard */,
 				9A17DB871BB65781000C2BA7 /* Assets.xcassets */,
 				9A17DB891BB65781000C2BA7 /* LaunchScreen.storyboard */,
@@ -144,6 +149,7 @@
 			children = (
 				9A17DBAF1BB65990000C2BA7 /* MenuTableViewController.swift */,
 				9A17DBB91BB65BB5000C2BA7 /* DetailTableViewController.swift */,
+				9A17DBC31BB6665A000C2BA7 /* NavigationController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -173,6 +179,14 @@
 				9A17DB801BB65781000C2BA7 /* AppDelegate.swift */,
 			);
 			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		9A17DBC01BB662EF000C2BA7 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				9A17DBC11BB66309000C2BA7 /* RP3DTransitionAnimator.swift */,
+			);
+			name = Transition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +321,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A17DBC21BB66309000C2BA7 /* RP3DTransitionAnimator.swift in Sources */,
+				9A17DBC41BB6665A000C2BA7 /* NavigationController.swift in Sources */,
 				9A17DBBA1BB65BB5000C2BA7 /* DetailTableViewController.swift in Sources */,
 				9A17DBBD1BB65BE1000C2BA7 /* DetailTableViewCell.swift in Sources */,
 				9A17DBB81BB65B6E000C2BA7 /* UITableView+RPExtension.swift in Sources */,

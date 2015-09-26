@@ -36,7 +36,7 @@
         <!--Navigation Controller-->
         <scene sceneID="52C-05-RxM">
             <objects>
-                <navigationController id="ipa-yP-auz" sceneMemberID="viewController">
+                <navigationController id="ipa-yP-auz" customClass="NavigationController" customModule="RP3DTransition" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="nmr-ds-9iU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
