@@ -97,6 +97,7 @@
 		9A17DB7F1BB65780000C2BA7 /* RP3DTransition */ = {
 			isa = PBXGroup;
 			children = (
+				9A17DBAE1BB658A5000C2BA7 /* Controller */,
 				9A17DB801BB65781000C2BA7 /* AppDelegate.swift */,
 				9A17DB821BB65781000C2BA7 /* ViewController.swift */,
 				9A17DB841BB65781000C2BA7 /* Main.storyboard */,
@@ -123,6 +124,13 @@
 				9A17DBA21BB65781000C2BA7 /* Info.plist */,
 			);
 			path = RP3DTransitionUITests;
+			sourceTree = "<group>";
+		};
+		9A17DBAE1BB658A5000C2BA7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
