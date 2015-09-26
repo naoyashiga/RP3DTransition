@@ -20,7 +20,20 @@ class NavigationController: UINavigationController, UINavigationControllerDelega
     }
     
     func navigationController(navigationController: UINavigationController, animationControllerForOperation operation: UINavigationControllerOperation, fromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
         let animator = RP3DTransitionAnimator()
-        return animator
+        
+        switch operation {
+        case .Push:
+            animator.transitionType = .Push
+            return animator
+            
+        case .Pop:
+            animator.transitionType = .Pop
+            return animator
+            
+        default:
+            return nil
+        }
     }
 }

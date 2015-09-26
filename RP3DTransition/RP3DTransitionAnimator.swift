@@ -8,6 +8,10 @@
 
 import UIKit
 
+enum TransitionType {
+    case Push,Pop
+}
+
 class RP3DTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     
     let kForwardAnimationDuration: NSTimeInterval = 0.3
@@ -15,6 +19,8 @@ class RP3DTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     
     var isPush = false
     let rotateAngle: CGFloat = CGFloat(M_PI_4)
+    
+    var transitionType = TransitionType.Push
     
     private(set) weak var transitionContext: UIViewControllerContextTransitioning?
     
@@ -60,22 +66,42 @@ class RP3DTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         rightViewTransform = CATransform3DRotate(rightViewTransform, -rotateAngle, 0, 1, 0)
         rightViewTransform = CATransform3DTranslate(rightViewTransform, screenWidth / 2, 0, 0)
         
-        containerView.insertSubview(toViewController.view, belowSubview: fromViewController.view)
-        toViewController.view.layer.transform = rightViewTransform
-        fromViewController.view.alpha = 1
-        
-        UIView.animateWithDuration(kForwardAnimationDuration, delay: 0, options: .CurveEaseOut, animations: {
+        switch transitionType {
+        case .Push:
+            containerView.insertSubview(toViewController.view, belowSubview: fromViewController.view)
+            toViewController.view.layer.transform = rightViewTransform
+            fromViewController.view.alpha = 1
             
-            fromViewController.view.layer.transform = leftViewTransform
-            fromViewController.view.alpha = 0
-            
-            toViewController.view.layer.transform = CATransform3DIdentity
-            
-            }, completion: { finished in
+            UIView.animateWithDuration(kForwardAnimationDuration, delay: 0, options: .CurveEaseOut, animations: {
                 
-                self.transitionContext!.completeTransition(!self.transitionContext!.transitionWasCancelled())
-        })
-        
+                fromViewController.view.layer.transform = leftViewTransform
+                fromViewController.view.alpha = 0
+                
+                toViewController.view.layer.transform = CATransform3DIdentity
+                
+                }, completion: { finished in
+                    
+                    self.transitionContext!.completeTransition(!self.transitionContext!.transitionWasCancelled())
+            })
+            
+        case .Pop:
+            containerView.insertSubview(toViewController.view, belowSubview: fromViewController.view)
+            toViewController.view.layer.transform = leftViewTransform
+            toViewController.view.alpha = 0
+            
+            UIView.animateWithDuration(kForwardAnimationDuration, delay: 0, options: .CurveEaseOut, animations: {
+                
+                fromViewController.view.layer.transform = rightViewTransform
+                
+                toViewController.view.layer.transform = CATransform3DIdentity
+                toViewController.view.alpha = 1
+                
+                }, completion: { finished in
+                    
+                    self.transitionContext!.completeTransition(!self.transitionContext!.transitionWasCancelled())
+            })
+            
+        }
     }
     
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
