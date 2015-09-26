@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A17DB811BB65781000C2BA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A17DB801BB65781000C2BA7 /* AppDelegate.swift */; };
+		9A17DB831BB65781000C2BA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A17DB821BB65781000C2BA7 /* ViewController.swift */; };
+		9A17DB861BB65781000C2BA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A17DB841BB65781000C2BA7 /* Main.storyboard */; };
+		9A17DB881BB65781000C2BA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A17DB871BB65781000C2BA7 /* Assets.xcassets */; };
+		9A17DB8B1BB65781000C2BA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A17DB891BB65781000C2BA7 /* LaunchScreen.storyboard */; };
+		9A17DB961BB65781000C2BA7 /* RP3DTransitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A17DB951BB65781000C2BA7 /* RP3DTransitionTests.swift */; };
+		9A17DBA11BB65781000C2BA7 /* RP3DTransitionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A17DBA01BB65781000C2BA7 /* RP3DTransitionUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A17DB921BB65781000C2BA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A17DB751BB65780000C2BA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A17DB7C1BB65780000C2BA7;
+			remoteInfo = RP3DTransition;
+		};
+		9A17DB9D1BB65781000C2BA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A17DB751BB65780000C2BA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A17DB7C1BB65780000C2BA7;
+			remoteInfo = RP3DTransition;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9A17DB7D1BB65780000C2BA7 /* RP3DTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RP3DTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A17DB801BB65781000C2BA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9A17DB821BB65781000C2BA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9A17DB851BB65781000C2BA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9A17DB871BB65781000C2BA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A17DB8A1BB65781000C2BA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9A17DB8C1BB65781000C2BA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A17DB911BB65781000C2BA7 /* RP3DTransitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RP3DTransitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A17DB951BB65781000C2BA7 /* RP3DTransitionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RP3DTransitionTests.swift; sourceTree = "<group>"; };
+		9A17DB971BB65781000C2BA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A17DB9C1BB65781000C2BA7 /* RP3DTransitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RP3DTransitionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A17DBA01BB65781000C2BA7 /* RP3DTransitionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RP3DTransitionUITests.swift; sourceTree = "<group>"; };
+		9A17DBA21BB65781000C2BA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A17DB7A1BB65780000C2BA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A17DB8E1BB65781000C2BA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A17DB991BB65781000C2BA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A17DB741BB65780000C2BA7 = {
+			isa = PBXGroup;
+			children = (
+				9A17DB7F1BB65780000C2BA7 /* RP3DTransition */,
+				9A17DB941BB65781000C2BA7 /* RP3DTransitionTests */,
+				9A17DB9F1BB65781000C2BA7 /* RP3DTransitionUITests */,
+				9A17DB7E1BB65780000C2BA7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9A17DB7E1BB65780000C2BA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A17DB7D1BB65780000C2BA7 /* RP3DTransition.app */,
+				9A17DB911BB65781000C2BA7 /* RP3DTransitionTests.xctest */,
+				9A17DB9C1BB65781000C2BA7 /* RP3DTransitionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A17DB7F1BB65780000C2BA7 /* RP3DTransition */ = {
+			isa = PBXGroup;
+			children = (
+				9A17DB801BB65781000C2BA7 /* AppDelegate.swift */,
+				9A17DB821BB65781000C2BA7 /* ViewController.swift */,
+				9A17DB841BB65781000C2BA7 /* Main.storyboard */,
+				9A17DB871BB65781000C2BA7 /* Assets.xcassets */,
+				9A17DB891BB65781000C2BA7 /* LaunchScreen.storyboard */,
+				9A17DB8C1BB65781000C2BA7 /* Info.plist */,
+			);
+			path = RP3DTransition;
+			sourceTree = "<group>";
+		};
+		9A17DB941BB65781000C2BA7 /* RP3DTransitionTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A17DB951BB65781000C2BA7 /* RP3DTransitionTests.swift */,
+				9A17DB971BB65781000C2BA7 /* Info.plist */,
+			);
+			path = RP3DTransitionTests;
+			sourceTree = "<group>";
+		};
+		9A17DB9F1BB65781000C2BA7 /* RP3DTransitionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9A17DBA01BB65781000C2BA7 /* RP3DTransitionUITests.swift */,
+				9A17DBA21BB65781000C2BA7 /* Info.plist */,
+			);
+			path = RP3DTransitionUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A17DB7C1BB65780000C2BA7 /* RP3DTransition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A17DBA51BB65781000C2BA7 /* Build configuration list for PBXNativeTarget "RP3DTransition" */;
+			buildPhases = (
+				9A17DB791BB65780000C2BA7 /* Sources */,
+				9A17DB7A1BB65780000C2BA7 /* Frameworks */,
+				9A17DB7B1BB65780000C2BA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RP3DTransition;
+			productName = RP3DTransition;
+			productReference = 9A17DB7D1BB65780000C2BA7 /* RP3DTransition.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9A17DB901BB65781000C2BA7 /* RP3DTransitionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A17DBA81BB65781000C2BA7 /* Build configuration list for PBXNativeTarget "RP3DTransitionTests" */;
+			buildPhases = (
+				9A17DB8D1BB65781000C2BA7 /* Sources */,
+				9A17DB8E1BB65781000C2BA7 /* Frameworks */,
+				9A17DB8F1BB65781000C2BA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A17DB931BB65781000C2BA7 /* PBXTargetDependency */,
+			);
+			name = RP3DTransitionTests;
+			productName = RP3DTransitionTests;
+			productReference = 9A17DB911BB65781000C2BA7 /* RP3DTransitionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9A17DB9B1BB65781000C2BA7 /* RP3DTransitionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A17DBAB1BB65781000C2BA7 /* Build configuration list for PBXNativeTarget "RP3DTransitionUITests" */;
+			buildPhases = (
+				9A17DB981BB65781000C2BA7 /* Sources */,
+				9A17DB991BB65781000C2BA7 /* Frameworks */,
+				9A17DB9A1BB65781000C2BA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A17DB9E1BB65781000C2BA7 /* PBXTargetDependency */,
+			);
+			name = RP3DTransitionUITests;
+			productName = RP3DTransitionUITests;
+			productReference = 9A17DB9C1BB65781000C2BA7 /* RP3DTransitionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A17DB751BB65780000C2BA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = naoyashiga;
+				TargetAttributes = {
+					9A17DB7C1BB65780000C2BA7 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					9A17DB901BB65781000C2BA7 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 9A17DB7C1BB65780000C2BA7;
+					};
+					9A17DB9B1BB65781000C2BA7 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 9A17DB7C1BB65780000C2BA7;
+					};
+				};
+			};
+			buildConfigurationList = 9A17DB781BB65780000C2BA7 /* Build configuration list for PBXProject "RP3DTransition" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9A17DB741BB65780000C2BA7;
+			productRefGroup = 9A17DB7E1BB65780000C2BA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A17DB7C1BB65780000C2BA7 /* RP3DTransition */,
+				9A17DB901BB65781000C2BA7 /* RP3DTransitionTests */,
+				9A17DB9B1BB65781000C2BA7 /* RP3DTransitionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A17DB7B1BB65780000C2BA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A17DB8B1BB65781000C2BA7 /* LaunchScreen.storyboard in Resources */,
+				9A17DB881BB65781000C2BA7 /* Assets.xcassets in Resources */,
+				9A17DB861BB65781000C2BA7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A17DB8F1BB65781000C2BA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A17DB9A1BB65781000C2BA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A17DB791BB65780000C2BA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A17DB831BB65781000C2BA7 /* ViewController.swift in Sources */,
+				9A17DB811BB65781000C2BA7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A17DB8D1BB65781000C2BA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A17DB961BB65781000C2BA7 /* RP3DTransitionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A17DB981BB65781000C2BA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A17DBA11BB65781000C2BA7 /* RP3DTransitionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A17DB931BB65781000C2BA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A17DB7C1BB65780000C2BA7 /* RP3DTransition */;
+			targetProxy = 9A17DB921BB65781000C2BA7 /* PBXContainerItemProxy */;
+		};
+		9A17DB9E1BB65781000C2BA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A17DB7C1BB65780000C2BA7 /* RP3DTransition */;
+			targetProxy = 9A17DB9D1BB65781000C2BA7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9A17DB841BB65781000C2BA7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A17DB851BB65781000C2BA7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9A17DB891BB65781000C2BA7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A17DB8A1BB65781000C2BA7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9A17DBA31BB65781000C2BA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9A17DBA41BB65781000C2BA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9A17DBA61BB65781000C2BA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RP3DTransition/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.naoyashiga.RP3DTransition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9A17DBA71BB65781000C2BA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RP3DTransition/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.naoyashiga.RP3DTransition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9A17DBA91BB65781000C2BA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RP3DTransitionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.naoyashiga.RP3DTransitionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RP3DTransition.app/RP3DTransition";
+			};
+			name = Debug;
+		};
+		9A17DBAA1BB65781000C2BA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RP3DTransitionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.naoyashiga.RP3DTransitionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RP3DTransition.app/RP3DTransition";
+			};
+			name = Release;
+		};
+		9A17DBAC1BB65781000C2BA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RP3DTransitionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.naoyashiga.RP3DTransitionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RP3DTransition;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		9A17DBAD1BB65781000C2BA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RP3DTransitionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.naoyashiga.RP3DTransitionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RP3DTransition;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A17DB781BB65780000C2BA7 /* Build configuration list for PBXProject "RP3DTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A17DBA31BB65781000C2BA7 /* Debug */,
+				9A17DBA41BB65781000C2BA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A17DBA51BB65781000C2BA7 /* Build configuration list for PBXNativeTarget "RP3DTransition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A17DBA61BB65781000C2BA7 /* Debug */,
+				9A17DBA71BB65781000C2BA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9A17DBA81BB65781000C2BA7 /* Build configuration list for PBXNativeTarget "RP3DTransitionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A17DBA91BB65781000C2BA7 /* Debug */,
+				9A17DBAA1BB65781000C2BA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9A17DBAB1BB65781000C2BA7 /* Build configuration list for PBXNativeTarget "RP3DTransitionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A17DBAC1BB65781000C2BA7 /* Debug */,
+				9A17DBAD1BB65781000C2BA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A17DB751BB65780000C2BA7 /* Project object */;
+}
